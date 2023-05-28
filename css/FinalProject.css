@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap') format('truetype');
+  }
+  @font-face {
+    font-family:'Ubuntu', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+  }
+
+  html {
+
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    
+    background-color: #26a507;
+    padding: 20px;
+    border-radius: 25px;
+    height: 25%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  
+#logo{
+    max-width: 30%;
+    height: auto;
+}
+
+#grapes {
+  position: absolute;
+  top: 50%; /* add this line to position the image in the middle */
+  left: 80%; /* add this line to position the image in the middle */
+  transform: translate(-50%, -50%); /* add this line to center the image */
+  max-width: 100%;
+  height: auto;
+}
+  
+  /*Search Bar*/
+  .search {
+    display: inline-block; /* Change display to inline-block to avoid cutting the bottom border */
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%; /* Use top and transform properties to center the search bar vertically */
+    transform: translateY(-50%);
+    right: 10%; /* Use right property to position the search bar to the right */
+  }
+  
+  .search-bar {
+    display: inline-block;
+    position: absolute;
+    top: 60%; /* Use top and transform properties to center the search bar vertically */
+    transform: translateY(-30%);
+    right: 10%; /* Use right property to position the search bar to the right */
+  }
+  
+  .search-input {
+    width: 300px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {}
+  
+  /* Navigation Bar*/
+  nav a {
+    background: url("../images/output-onlinepngtools.png") no-repeat;
+    background-size: 15%;
+    background-position: left;
+    display: block;
+    font-size: large;
+    font-family: 'Ubuntu Bold', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color:#26a507;;
+    margin: 15px 10px 15px 10px; /* adjust the margin as needed */
+    padding: 10px 7px 3px 30px;
+    transition: .5s ease;
+  }
+  
+  nav a:hover {
+    padding: 3%;
+    background-color: #f5a623;
+    transform: scale(1.1);
+    background-position: right;
+    box-shadow: #000000 solid 5%;
+    border: #FFFFFF solid 3px;
+  }
+  
+  nav a:focus {
+    background-color: #f5a623;
+    padding: 3%;
+    transform: scale(1.1);
+    background-position: right;
+    box-shadow: #000000 solid 5%;
+    border: #FFFFFF solid 3px;
+    border-radius: 5px;
+  }
+  
+  nav{
+    display: inline;
+    float: left;
+    width: 15%;
+    height: calc(100vh - 40px);
+    margin-top: 5px;
+    border-radius: 25px;
+    position: relative;
+
+  }
+
+  body{
+    height: 100%;
+    background-color:#ffffff;
+    background-image: url(../images/faded-gray-wooden-textured-flooring-background.jpg);
+    background-size: cover;
+    
+
+  }
+
+  /* paragraph box*/ 
+  .para {
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-top: 20px; /* or remove this line */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    border: #f5a623 solid 10px;
+    background-position: 80 30;
+    color: #000000;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    word-wrap: break-word;
+    font-size: x-large;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 20px; /* add this line */
+  }
+
+
+
+  /*items*/
+
+  #items{
+    height: 800px;
+
+  }
+  #items table{
+    height: 100%;
+    margin: 0%;
+    margin-left: 5%;
+    align-items: center;
+  }
+  #items table tr td{
+    width: 20%;
+    height: 30%;
+    overflow: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+
+  }
+  #items table tr td a{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: .5s ease;
+    text-align: center;
+
+  }
+  #items table tr td a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+
+  /* for the product info */
+
+  .products{
+    margin-left: 20%;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 25px;
+    width: 75%;
+    height: 50%;
+    align-items: center;
+   }
+
+
+/*View more*/
+#viewMore a{
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+  margin-right: 7.5%;
+
+}
+
+
+  /* table products */
+  table{
+    margin-left: 10%;
+    width:80%;
+    height:80%;
+    border-spacing: 30px;
+    border-collapse: separate;
+    
+
+  }
+  table tr th{
+    width:33.33333333%;
+    height: 70%;
+    border-radius: 1px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  th a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1px;
+
+  }
+  th:hover{
+    transform: scale(1.1);
+  }
+
+  
